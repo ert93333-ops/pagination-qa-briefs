@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagination SEO Checklist | Pagination QA Briefs</title>
+    <meta
+      name="description"
+      content="A practical pagination SEO checklist for ecommerce, publishers, documentation sites, and migration teams checking crawlable links, unique URLs, canonicals, noindex, infinite scroll, load-more controls, and sitemap fallback."
+    >
+    <link rel="canonical" href="https://ert93333-ops.github.io/pagination-qa-briefs/pagination-seo-checklist.html">
+    <meta property="og:title" content="Pagination SEO Checklist">
+    <meta property="og:description" content="Check crawlable pagination links, page 2 canonicals, noindex risks, load-more controls, and sitemap fallback before launch.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ert93333-ops.github.io/pagination-qa-briefs/pagination-seo-checklist.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-product="Pagination QA Briefs">
+    <a class="skip-link" href="#checklist">Skip to checklist</a>
+
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Pagination QA Briefs home">
+          <span class="brand-mark" aria-hidden="true">PQ</span>
+          <span>Pagination QA Briefs</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html#workflow">Auditor</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#waitlist">Early access</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Pagination SEO checklist</p>
+            <h1>Prelaunch checks for pagination, load-more, and infinite scroll.</h1>
+            <p class="hero-subtitle">
+              Use this checklist before shipping ecommerce listings, article archives, documentation indexes,
+              reviews, comments, search pages, or migration templates with page 2+ content.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="index.html#workflow" data-track-cta="checklist_try_tool">Run the pagination auditor</a>
+              <a class="button secondary" href="index.html#waitlist" data-track-cta="checklist_waitlist">Request early access</a>
+            </div>
+          </div>
+
+          <div class="product-preview reveal" aria-label="Checklist preview">
+            <div class="preview-header">
+              <span class="status-dot"></span>
+              <span>pagination launch checklist</span>
+            </div>
+            <div class="brief-preview">
+              <p class="brief-label">Primary risk</p>
+              <strong>Content exists, but crawlers cannot reliably discover page 2+.</strong>
+              <p>Check links, URLs, canonical/noindex behavior, sitemap fallback, and JS-only loading before launch.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="checklist">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Checklist</p>
+            <h2>Pagination SEO checks before launch</h2>
+            <p>
+              This is a manual QA asset for launch owners. It is not a crawler, Search Console export,
+              PageSpeed report, or indexing guarantee.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <h3>1. Crawlable links</h3>
+              <p>Confirm page numbers, next links, and previous links are real anchor tags with `href` values. Avoid span-only, button-only, or click-handler-only controls for crawler discovery.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>2. Unique page URLs</h3>
+              <p>Verify page 2+ has stable URLs such as `?page=2` or `/page/2/`. Fragment-only states like `#page-3` are weak crawl targets.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>3. Sequential coverage</h3>
+              <p>Check that users and crawlers can move through adjacent pages. A jump from page 1 to page 5 with no next path can hide deeper content.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>4. Canonicals</h3>
+              <p>Review page 2+ canonical tags. Important paginated pages should not be accidentally canonicalized to page 1 when they contain distinct products, articles, docs, reviews, or comments.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>5. Meta robots</h3>
+              <p>Confirm `noindex` is intentional on page 2+ content. A copied template-level noindex can remove valuable archive or listing pages from consideration.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>6. Load-more controls</h3>
+              <p>If users click "Load more", provide crawlable fallback URLs. Button-only loading can look fine in QA while hiding deeper inventory from crawlers.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>7. Infinite scroll</h3>
+              <p>When infinite scroll is used, verify paginated URLs exist independently, content is reachable without scroll events, and internal links expose deeper states.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>8. Sitemap fallback</h3>
+              <p>Include representative important page 2+ URLs in sitemap samples when internal link discovery is fragile or launch templates are still changing.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>9. Anchor labels</h3>
+              <p>Replace empty or generic anchors with clear labels such as page number, next page, previous page, or older articles. This improves QA readability and handoff clarity.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="handoff-title">
+        <div class="shell resources-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Handoff prompt</p>
+            <h2 id="handoff-title">Copy this into a launch ticket</h2>
+            <p>
+              Paste pagination HTML snippets, page URL examples, canonical/noindex rows, UX notes,
+              and sitemap samples into the auditor before final frontend or SEO signoff.
+            </p>
+          </div>
+          <a class="resource-link reveal" href="index.html#workflow" data-track-cta="checklist_core_workflow">
+            <span>Open the browser-local pagination QA workflow</span>
+            <span aria-hidden="true">-&gt;</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>Pagination QA Briefs</span>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

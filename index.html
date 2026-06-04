@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagination QA Briefs | Pagination SEO checklist</title>
+    <meta
+      name="description"
+      content="Paste pagination HTML, page URL examples, canonical/noindex rows, UX notes, and sitemap samples to catch missing crawlable links, fragment URLs, canonical drift, noindex risks, and load-more SEO gaps before launch."
+    >
+    <link rel="canonical" href="https://ert93333-ops.github.io/pagination-qa-briefs/">
+    <meta property="og:title" content="Pagination QA Briefs">
+    <meta property="og:description" content="Catch pagination, load-more, and infinite-scroll SEO gaps before launch.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ert93333-ops.github.io/pagination-qa-briefs/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-product="Pagination QA Briefs">
+    <a class="skip-link" href="#workflow">Skip to pagination QA</a>
+
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Pagination QA Briefs home">
+          <span class="brand-mark" aria-hidden="true">PQ</span>
+          <span>Pagination QA Briefs</span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#workflow">Auditor</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#waitlist">Early access</a>
+          <a href="pagination-seo-checklist.html">Checklist</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Pagination SEO checklist</p>
+            <h1>Catch pagination SEO gaps before launch.</h1>
+            <p class="hero-subtitle">
+              Paste pagination HTML, page URL examples, canonical rows, UX notes, and sitemap samples
+              to flag hidden content, button-only load-more, fragment URLs, page 2 canonical drift,
+              noindex mistakes, and missing sequential links.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#workflow" data-track-cta="hero_audit">Audit sample pagination</a>
+              <a class="button secondary" href="#waitlist" data-track-cta="hero_waitlist">Request early access</a>
+            </div>
+            <dl class="signal-row" aria-label="Launch facts">
+              <div>
+                <dt>No live crawl</dt>
+                <dd>Paste-in static MVP</dd>
+              </div>
+              <div>
+                <dt>Pagination QA</dt>
+                <dd>links, URLs, canonicals</dd>
+              </div>
+              <div>
+                <dt>$59/mo</dt>
+                <dd>Agency hypothesis</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="product-preview reveal" aria-label="Product preview">
+            <div class="preview-header">
+              <span class="status-dot"></span>
+              <span>prelaunch pagination SEO QA</span>
+            </div>
+            <div class="preview-grid">
+              <div class="url-preview">
+                <p>&lt;span&gt;2&lt;/span&gt;</p>
+                <p>&lt;button&gt;Next&lt;/button&gt;</p>
+                <p>/blog#page-3</p>
+                <p class="warn-line">missing crawlable href and fragment URL risk</p>
+              </div>
+              <div class="brief-preview">
+                <p class="brief-label">QA result</p>
+                <strong>Fix before launch</strong>
+                <p>Crawlable link, URL, canonical, noindex, and sitemap fallback checks need owner review.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="workflow" aria-labelledby="workflow-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Core workflow</p>
+            <h2 id="workflow-title">Paste pagination snippets. Get a copyable QA brief.</h2>
+            <p>
+              This MVP analyzes pasted samples in your browser. It does not crawl pages,
+              fetch URLs, use Search Console, run PageSpeed, or guarantee indexation.
+            </p>
+          </div>
+
+          <div class="auditor-layout">
+            <form class="auditor-panel reveal" id="auditor-form">
+              <div class="field-row">
+                <label for="html-input">Pagination HTML snippets</label>
+                <button class="text-button" type="button" id="load-sample" data-track-cta="load_sample">
+                  Load sample pagination
+                </button>
+              </div>
+              <textarea
+                id="html-input"
+                aria-describedby="privacy-note"
+                placeholder="&lt;nav class=&quot;pagination&quot;&gt;&#10;  &lt;a href=&quot;/blog?page=1&quot;&gt;1&lt;/a&gt;&#10;  &lt;span&gt;2&lt;/span&gt;&#10;  &lt;button&gt;Next&lt;/button&gt;&#10;&lt;/nav&gt;"
+              ></textarea>
+
+              <label for="urls-input">Page URL examples</label>
+              <textarea
+                id="urls-input"
+                class="short-textarea"
+                placeholder="https://example.com/blog?page=1&#10;https://example.com/blog?page=2&#10;https://example.com/blog#page-3"
+              ></textarea>
+
+              <label for="meta-input">Optional canonical/noindex rows</label>
+              <textarea
+                id="meta-input"
+                class="short-textarea"
+                placeholder="https://example.com/blog?page=2 | canonical=https://example.com/blog | meta=index,follow"
+              ></textarea>
+
+              <label for="ux-input">Optional UX pattern notes</label>
+              <textarea
+                id="ux-input"
+                class="short-textarea"
+                placeholder="Load more appends products without changing URL. Infinite scroll uses #page-3 fragments."
+              ></textarea>
+
+              <label for="sitemap-input">Optional sitemap sample URLs</label>
+              <textarea
+                id="sitemap-input"
+                class="short-textarea"
+                placeholder="https://example.com/blog?page=1&#10;https://example.com/blog?page=2"
+              ></textarea>
+
+              <div class="form-grid compact-grid">
+                <label>
+                  Site type
+                  <select id="site-type">
+                    <option selected>Ecommerce listings</option>
+                    <option>Publisher archives</option>
+                    <option>Docs index pages</option>
+                    <option>Reviews or comments</option>
+                    <option>Marketplace search</option>
+                  </select>
+                </label>
+              </div>
+
+              <p class="privacy-note" id="privacy-note">
+                Paste only public-safe or anonymized samples. This is launch QA guidance, not a crawling, ranking, or indexing guarantee.
+              </p>
+              <div class="workflow-actions">
+                <button class="button primary" type="submit" id="generate-brief" data-track-cta="generate_brief">
+                  Generate pagination QA brief
+                </button>
+                <button class="button secondary" type="button" id="copy-brief" disabled>
+                  Copy brief
+                </button>
+              </div>
+              <p class="form-error" id="workflow-error" role="alert" aria-live="polite"></p>
+            </form>
+
+            <aside class="output-panel reveal" aria-labelledby="output-title">
+              <div class="output-header">
+                <div>
+                  <p class="eyebrow">Generated brief</p>
+                  <h3 id="output-title">No audit yet</h3>
+                </div>
+                <span class="confidence-pill" id="status-pill">Waiting</span>
+              </div>
+              <div class="brief-output empty" id="brief-output" aria-live="polite">
+                Load the sample or paste pagination snippets to generate a pagination QA brief.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="why-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why this exists</p>
+            <h2 id="why-title">Pagination can hide valuable content even when the UI looks finished.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <h3>Check crawlable links</h3>
+              <p>Flag span-only page numbers, button-only next controls, missing hrefs, and missing sequential links.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>Review URL signals</h3>
+              <p>Find fragment-only page states, missing unique URLs, page 2 canonical drift, and noindex mistakes.</p>
+            </article>
+            <article class="feature-card reveal">
+              <h3>Copy the handoff</h3>
+              <p>Turn findings into a launch-ready QA note for SEO, frontend, ecommerce, docs, and migration owners.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" id="pricing" aria-labelledby="pricing-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Pricing hypothesis</p>
+            <h2 id="pricing-title">Reserve early access before billing is connected.</h2>
+            <p>Pricing is tested through demo requests and purchase intent while payments are unavailable.</p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <p class="plan-name">Solo</p>
+              <p class="plan-price">$19<span>/month</span></p>
+              <p>For founders and in-house teams checking one paginated template before launch.</p>
+              <button class="button secondary plan-button" type="button" data-plan="Solo - $19/month" data-track-cta="solo_plan">
+                Request Solo access
+              </button>
+            </article>
+            <article class="price-card featured-price reveal">
+              <p class="plan-name">Agency</p>
+              <p class="plan-price">$59<span>/month</span></p>
+              <p>For agencies and technical SEOs that need repeatable pagination QA handoffs.</p>
+              <button class="button primary plan-button" type="button" data-plan="Agency - $59/month" data-track-cta="agency_plan">
+                Request Agency access
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="shell waitlist-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Early access</p>
+            <h2 id="waitlist-title">Request the first usable build.</h2>
+            <p>This form stores locally and prepares a public-safe GitHub issue handoff.</p>
+          </div>
+
+          <form class="waitlist-form reveal" id="waitlist-form">
+            <div class="form-grid">
+              <label>
+                Work email
+                <input id="email" name="email" type="email" required value="pagination-smoke@example.invalid">
+              </label>
+              <label>
+                Role
+                <select id="role" name="role">
+                  <option>Technical SEO</option>
+                  <option>Ecommerce operator</option>
+                  <option>Publisher growth lead</option>
+                  <option>Migration agency</option>
+                  <option>Frontend developer</option>
+                </select>
+              </label>
+              <label>
+                Site type
+                <select id="site-type-intent" name="site-type-intent">
+                  <option selected>Ecommerce listings</option>
+                  <option>Publisher archives</option>
+                  <option>Docs index pages</option>
+                  <option>Reviews or comments</option>
+                  <option>Marketplace search</option>
+                </select>
+              </label>
+              <label>
+                Pagination templates
+                <select id="template-count" name="template-count">
+                  <option>1 template</option>
+                  <option selected>2-10 templates</option>
+                  <option>11-50 templates</option>
+                  <option>50+ templates</option>
+                </select>
+              </label>
+              <label>
+                Plan interest
+                <select id="plan" name="plan">
+                  <option>Solo - $19/month</option>
+                  <option selected>Agency - $59/month</option>
+                </select>
+              </label>
+              <label>
+                Willingness to pay
+                <select id="budget" name="budget">
+                  <option>$19/month for one site</option>
+                  <option selected>$59/month for client QA</option>
+                  <option>$149/month for marketplace teams</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+              <label class="wide-field">
+                Biggest pagination QA pain
+                <textarea id="pain" name="pain" class="short-textarea">I need a repeatable client-safe check for missing crawlable hrefs, button-only load-more, infinite-scroll fragments, unique page URLs, page 2 canonicals, noindex mistakes, sequential links, sitemap fallback, and generic anchor text.</textarea>
+              </label>
+            </div>
+            <label class="checkbox-row">
+              <input id="purchase-intent" type="checkbox" checked>
+              <span>This is a real purchase-intent or pilot request if it catches pagination launch risks.</span>
+            </label>
+            <div class="workflow-actions">
+              <button class="button primary" type="submit" data-track-cta="waitlist_submit">Request early access</button>
+              <a class="button secondary" href="#workflow" data-track-cta="waitlist_demo">Try the auditor</a>
+            </div>
+            <p class="form-success" id="waitlist-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="handoff-panel reveal" id="handoff-panel" hidden>
+            <p class="eyebrow">Remote handoff</p>
+            <h3>Send a public-safe demo request</h3>
+            <p>Email stays local. The issue body contains role, site type, template count, plan interest, and pain only.</p>
+            <div class="workflow-actions">
+              <a class="button primary" id="remote-intent-link" href="#" target="_blank" rel="noreferrer">Open GitHub demo request</a>
+              <button class="button secondary" type="button" id="copy-request">Copy request details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section band" aria-labelledby="resources-title">
+        <div class="shell resources-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">SEO asset</p>
+            <h2 id="resources-title">Pagination SEO checklist</h2>
+            <p>A practical checklist is included for teams searching for infinite scroll SEO, load more SEO, ecommerce pagination SEO, and paginated content QA.</p>
+          </div>
+          <a class="resource-link reveal" href="pagination-seo-checklist.html" data-track-cta="seo_guide">
+            <span>Read the pagination SEO checklist</span>
+            <span aria-hidden="true">-&gt;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="faq-title">
+        <div class="shell faq-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title">Pagination constraints are explicit.</h2>
+          </div>
+          <details class="reveal">
+            <summary>Does it crawl my site?</summary>
+            <p>No. This MVP only analyzes pasted pagination snippets, URL examples, canonical rows, UX notes, and sitemap samples.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does it replace a crawler?</summary>
+            <p>No. Crawler suites are still needed for site-wide audits. This is a fast prelaunch template review and handoff tool.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does it guarantee indexing?</summary>
+            <p>No. It produces launch QA guidance and does not guarantee crawling, indexing, rankings, or crawl-budget outcomes.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can I paste private client snippets?</summary>
+            <p>The app is browser-local, but you should still paste only public-safe or anonymized samples.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>Pagination QA Briefs</span>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
