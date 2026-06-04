@@ -25,7 +25,7 @@ Billing is not connected. The MVP uses early-access, demo-request, and purchase-
 
 - Landing page: https://ert93333-ops.github.io/pagination-qa-briefs/
 - Checklist: https://ert93333-ops.github.io/pagination-qa-briefs/pagination-seo-checklist.html
-- GitHub Gist checklist: pending launch
+- GitHub Gist checklist: https://gist.github.com/ert93333-ops/223ae8c398ddd76a71f0f7d7c4083378
 
 ## Marketing Test Links
 
